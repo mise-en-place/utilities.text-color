@@ -1,30 +1,31 @@
 // ==========================================================================
-// ALIGN TEXT
+// Color Text Utility
 // ==========================================================================
+
 /*doc
 ---
 title: Color text
-name: 4_color_text
+name: color_text
 category: utilities
 ---
 
 This utility forces text to a particular color. It should only be used as a last resort when
- text really needs to be another color, for no real/semantic reason, eg Location titles in the footer.
+text really needs to be another color, for no real/semantic reason, eg Location titles in the footer.
 
 ```html_example
-<p class="u-text-color--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
- Cum et, odit illum molestias architecto obcaecati nihil nemo aspernatur placeat</p>
-<p class="u-text-color--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
- Cum et, odit illum molestias architecto obcaecati nihil nemo aspernatur placeat</p>
-<p class="u-text-color--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+<p class="u-text-color-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
  Cum et, odit illum molestias architecto obcaecati nihil nemo aspernatur placeat</p>
 
+<p class="u-text-color-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+ Cum et, odit illum molestias architecto obcaecati nihil nemo aspernatur placeat</p>
+
+<p class="u-text-color-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+ Cum et, odit illum molestias architecto obcaecati nihil nemo aspernatur placeat</p>
 ```
-
 */
 
 @each $color, $shades in global-config('palettes') {
-    $colorName: if($color == 'grey', '-', '--#{$color}');
+    $colorName: if($color == 'grey', '-', '-#{$color}');
     @each $shade, $value in $shades {
 
         $shadeModifier: if($shade == base, '', '-#{$shade}');
@@ -44,10 +45,10 @@ This utility forces text to a particular color. It should only be used as a last
 }
 
 
-.u-text-color--black {
+.u-text-color-black {
     color: black;
 }
 
-.u-text-color--white {
+.u-text-color-white {
     color: white;
 }
