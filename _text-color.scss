@@ -38,12 +38,11 @@ text really needs to be another color, for no real/semantic reason, eg Location 
             $shadeModifier: '-#{$shade}';
         }
 
-        .u-text-color#{$colorName}#{$shadeModifier} {
-            color: palette($color, $shade) !important;
-        }
+        // .u-text-color#{$colorName}#{$shadeModifier} {
+        //     color: palette($color, $shade) !important;
+        // }
     }
 }
-
 
 .u-text-color-black {
     color: black;
