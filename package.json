@@ -18,5 +18,8 @@
     "url": "https://github.com/mise-en-place/utilities.text-color.git"
   },
   "author": "Kind",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mep-tools.global-config": "github:mise-en-place/tools.global-config"
+  }
 }
