@@ -1,6 +1,6 @@
 {
   "name": "mep-utilities.text-color",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Text Color Utility",
   "main": "stylesheets/_utility-text-color.scss",
   "eyeglass": {
