@@ -26,7 +26,7 @@ text really needs to be another color, for no real/semantic reason, eg Location 
 ```
 */
 
-@each $color, $shades in global-config('palettes') {
+@each $color, $shades in global-config('palette') {
     $colorName: if($color == 'grey', '-', '-#{$color}');
     @each $shade, $value in $shades {
 
