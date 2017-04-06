@@ -1,15 +1,9 @@
 {
   "name": "mep-utilities.text-color",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Text Color Utility",
   "main": "stylesheets/_utility-text-color.scss",
-  "eyeglass": {
-    "needs": "^1.0.0",
-    "name": "utility-text-color",
-    "exports": "eyeglass-exports.js"
-  },
   "keywords": [
-    "eyeglass-module",
     "sass",
     "mise-en-place"
   ],
